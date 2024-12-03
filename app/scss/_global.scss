@@ -1,0 +1,186 @@
+html,
+body {
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+input,
+textarea {
+	outline: none;
+	font-size: 16px !important;
+
+	&::placeholder {
+		font-size: 16px !important;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-size: inherit;
+}
+
+body {
+	font-family: "Manrope", serif;
+	// font-family: "Exo 2", sans-serif;
+	color: rgb(243, 243, 243);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 0.5px;
+	background-color: #171717;
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+	max-width: 1250px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	width: fit-content;
+	border-radius: 4px;
+	background: rgb(255, 168, 0);
+	padding: 15px 50px;
+	color: rgb(9, 6, 0);
+	font-family: "Exo 2", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 120%;
+	transition: linear .2s;
+
+	&:hover {
+		transform: translate(-3px, -3px);
+	}
+}
+
+//
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+	display: none;
+}
+
+.irs--flat .irs-single {
+	border-radius: 8px;
+	box-shadow: 0px 44px 44px -7px rgba(0, 0, 0, 0.08);
+	background: #ffa800;
+	padding: 10px 12px;
+	color: rgb(9, 6, 0);
+	font-family: "Exo 2", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 130%;
+	top: -50px;
+}
+
+.irs--flat .irs-single:before {
+	border: 6px solid transparent;
+	border-top-color: #ffa800;
+	bottom: -11px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	margin-left: -6px;
+}
+
+.irs--flat .irs-handle>i:first-child {
+	width: 30px;
+	height: 30px;
+	background-color: #ffa800 !important;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	top: -8px;
+	left: -42%;
+}
+
+.irs--flat .irs-bar {
+	top: 25px;
+	height: 8px;
+	background: rgba(255, 168, 0, 0.76);
+}
+
+.irs--flat .irs-line {
+	height: 8px;
+	background: rgb(243, 243, 243);
+}
+
+//
+.title {
+	color: rgb(255, 205, 109);
+	font-family: "Exo 2", sans-serif;
+	font-size: 46px;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+//
+.soc {
+	display: flex;
+	a{
+		border-bottom: none !important;
+	}
+	li {
+		margin: 0 10px 0 0 !important;
+		transition: linear .2s;
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
